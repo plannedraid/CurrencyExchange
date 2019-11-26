@@ -42,7 +42,7 @@ public class exchangeJFrame extends javax.swing.JFrame {
         frazLbl = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         remainingVroLbl = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        exchangeBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,7 +68,6 @@ public class exchangeJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 150, 30));
 
         gazoonLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        gazoonLbl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(gazoonLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 150, 30));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -88,19 +87,15 @@ public class exchangeJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 150, 30));
 
         bloinLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        bloinLbl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(bloinLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 150, 30));
 
         clickwickLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        clickwickLbl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(clickwickLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 150, 30));
 
         drobitLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        drobitLbl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(drobitLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 150, 30));
 
         frazLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        frazLbl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(frazLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 150, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -108,17 +103,16 @@ public class exchangeJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 150, 30));
 
         remainingVroLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        remainingVroLbl.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(remainingVroLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 150, 30));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Exchange");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        exchangeBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        exchangeBtn.setText("Exchange");
+        exchangeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                exchangeBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 150, -1));
+        jPanel1.add(exchangeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 150, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -138,7 +132,7 @@ public class exchangeJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_vrobitInputTFActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void exchangeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exchangeBtnActionPerformed
         int input = Integer.parseInt(vrobitInputTF.getText());
         int remaining, drob, click, gaz, fraz, bloin;
 
@@ -172,7 +166,7 @@ public class exchangeJFrame extends javax.swing.JFrame {
         remainingVroLbl.setText(vOut);
 
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_exchangeBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,9 +207,9 @@ public class exchangeJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel bloinLbl;
     private javax.swing.JLabel clickwickLbl;
     private javax.swing.JLabel drobitLbl;
+    private javax.swing.JButton exchangeBtn;
     private javax.swing.JLabel frazLbl;
     private javax.swing.JLabel gazoonLbl;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
